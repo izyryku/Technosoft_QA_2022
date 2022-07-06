@@ -34,7 +34,7 @@ console.log(`${sentence2replace_a_A}`);
  * 6. word 'Body' is present only once. (true or false)
  */
 
-let sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+let sentence3 = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL."
 let lengthofSentence3 = sentence3.length;
 console.log(`lengthofSentence3 -> ${lengthofSentence3}`);
 
@@ -44,5 +44,23 @@ let sentence3_Uppercase = sentence3.toUpperCase()
 let startwithPattern_health = sentence3_Uppercase.startsWith(startwithPattern);
 console.log(`Does ${sentence3} starts with 'health' : ${startwithPattern_health}`);
 
-let sentence3includes = sentence3.includes('Body');
-console.log(`${sentence3} containes with 'Body' : ${sentence3includes}`);
+
+let word = 'Body'; // BODY
+word = word.toUpperCase();
+let sentence3_includes = sentence3.toUpperCase();
+let sentence3_includes_word = sentence3_includes.includes(word);
+console.log(`${sentence3} containes with 'Body' : ${sentence3_includes_word}`);
+
+let indexOf = 'Body';
+indexOf = indexOf.toUpperCase();
+let indexOf_sentence3 = sentence3.toUpperCase();
+let indexOf_body = indexOf_sentence3.indexOf(indexOf);
+console.log(`index of 'Body' in ${sentence3} is ${indexOf_body}`);
+
+
+// *5
+let sentence3_length = sentence3.length;
+console.log(`${sentence3_length}`);
+let last_character = sentence3.charAt(sentence3_length);
+console.log(`${last_character}`);
+console.log(`the last character in ${sentence3} is ${last_character}`);
